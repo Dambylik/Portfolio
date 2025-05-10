@@ -1,0 +1,122 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 20%;
+
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 5% 96%;
+    --secondary-foreground: 240 10% 20%;
+
+    --muted: 240 5% 96%;
+    --muted-foreground: 240 5% 45%;
+
+    --accent: 346 77% 72%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 5% 90%;
+    --input: 240 5% 90%;
+    --ring: 346 77% 72%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 8%;
+    --foreground: 0 0% 100%;
+
+    --card: 240 10% 8%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 240 10% 8%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 262 83% 58%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 5% 15%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 240 5% 15%;
+    --muted-foreground: 240 5% 75%;
+
+    --accent: 346 77% 72%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 5% 15%;
+    --input: 240 5% 15%;
+    --ring: 346 77% 72%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-montserrat;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins font-medium;
+  }
+
+  .section {
+    @apply py-24 px-4 md:px-8 lg:px-12 max-w-7xl mx-auto;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-semibold mb-6 inline-block relative;
+  }
+  
+  .section-title::after {
+    content: '';
+    @apply absolute -bottom-1 left-0 w-1/2 h-1 bg-accent rounded-full;
+  }
+  
+  .nav-link {
+    @apply relative px-2 py-1 text-foreground transition-colors duration-200;
+  }
+  
+  .nav-link::after {
+    content: '';
+    @apply absolute w-0 h-0.5 bg-accent left-1/2 -translate-x-1/2 bottom-0 transition-all duration-300 ease-in-out;
+  }
+  
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+}
+
+@keyframes floating {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-floating {
+  animation: floating 3s ease-in-out infinite;
+}
