@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
@@ -36,8 +35,12 @@ const Hero = () => {
               Full-Stack Developer
             </span>
             <h1 className="text-4xl md:text-6xl font-poppins font-bold mb-4">
-              Hello, I'm 
-              <span className="text-accent block mt-2">Olga Kapshai</span>
+              <span className="text-muted-foreground font-normal text-2xl md:text-3xl block mb-2">
+                Hello, I'm
+              </span>
+              <span className="text-accent">
+                Olga <span className="text-primary">Kapshai</span>
+              </span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-md">
               I build creative, functional web applications with modern technologies and thoughtful user experiences.

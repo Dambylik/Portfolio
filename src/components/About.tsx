@@ -57,20 +57,13 @@ const About = () => {
             <h3 className="text-2xl font-poppins font-medium mb-6 text-accent">Get to know me!</h3>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                I'm a passionate Full-Stack Developer with expertise in building responsive, 
+                I'm a passionate Full-Stack Developer with experience in building responsive, 
                 accessible, and performant web applications. With keen attention to detail and 
                 a focus on user experience, I create intuitive interfaces backed by robust functionality.
               </p>
               <p>
-                My background in both frontend and backend development allows me to approach projects 
-                holistically, ensuring seamless integration between all components. I enjoy solving 
-                complex problems and turning ideas into elegant, functional solutions.
-              </p>
-              <p>
-                Beyond coding, I'm constantly learning new technologies and methodologies to stay 
-                at the forefront of web development. When I'm not building applications, you might 
-                find me exploring new design trends, contributing to open-source projects, or sharing 
-                knowledge with the developer community.
+                I enjoy solving complex problems and turning ideas into elegant, functional solutions. Beyond coding, I'm constantly learning new technologies and methodologies to stay 
+                at the forefront of web development.
               </p>
             </div>
             <button 
@@ -114,24 +107,18 @@ const About = () => {
             </div>
 
             <div className="mt-10">
-              <h4 className="text-xl font-poppins font-medium mb-4">Education & Experience</h4>
+              <h4 className="text-xl font-poppins font-medium mb-4">Education</h4>
               <div className="space-y-4">
                 <Card className="border-none shadow-md hover:shadow-lg transition-shadow">
                   <CardContent className="p-4">
-                    <p className="font-medium text-lg">Senior Full-Stack Developer</p>
-                    <p className="text-accent">Tech Innovators Inc. • 2021-Present</p>
+                    <p className="font-medium text-lg">Full-Stack Developer</p>
+                    <p className="text-accent">École 42 • 2024-Present</p>
                   </CardContent>
                 </Card>
                 <Card className="border-none shadow-md hover:shadow-lg transition-shadow">
                   <CardContent className="p-4">
-                    <p className="font-medium text-lg">Web Developer</p>
-                    <p className="text-accent">Digital Solutions Ltd. • 2018-2021</p>
-                  </CardContent>
-                </Card>
-                <Card className="border-none shadow-md hover:shadow-lg transition-shadow">
-                  <CardContent className="p-4">
-                    <p className="font-medium text-lg">Bachelor of Science in Computer Science</p>
-                    <p className="text-accent">University of Technology • 2014-2018</p>
+                    <p className="font-medium text-lg">International Project Manager</p>
+                    <p className="text-accent">ESG MBA • 2019</p>
                   </CardContent>
                 </Card>
               </div>
