@@ -1,6 +1,8 @@
+
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -35,12 +37,8 @@ const Hero = () => {
               Full-Stack Developer
             </span>
             <h1 className="text-4xl md:text-6xl font-poppins font-bold mb-4">
-              <span className="text-muted-foreground font-normal text-2xl md:text-3xl block mb-2">
-                Hello, I'm
-              </span>
-              <span className="text-accent">
-                Olga <span className="text-primary">Kapshai</span>
-              </span>
+              Hello, I'm 
+              <span className="block mt-2">Olga <span className="text-primary">Kapshai</span></span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-md">
               I build creative, functional web applications with modern technologies and thoughtful user experiences.
@@ -70,10 +68,11 @@ const Hero = () => {
               {/* Main profile image container */}
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-primary/80 to-accent/80 p-1 shadow-xl">
                 <div className="w-full h-full rounded-full bg-white relative overflow-hidden">
-                  {/* Replace with actual profile picture when available */}
-                  <div className="absolute inset-0 flex items-center justify-center text-4xl font-poppins font-bold text-accent">
-                    OK
-                  </div>
+                  <img 
+                    src="/portfolio/uploads/2.png" 
+                    alt="Olga Kapshai" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
               

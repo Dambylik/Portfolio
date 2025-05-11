@@ -66,7 +66,7 @@ const Footer = () => {
             </div>
             
             <p className="text-sm text-muted-foreground">
-              //Designed & Built with &#10084;
+              Designed & Built with &#10084;
             </p>
           </div>
         </div>
