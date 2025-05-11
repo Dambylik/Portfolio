@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
@@ -69,7 +68,7 @@ const Hero = () => {
               <div className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gradient-to-br from-primary/80 to-accent/80 p-1 shadow-xl">
                 <div className="w-full h-full rounded-full bg-white relative overflow-hidden">
                   <img 
-                    src="/portfolio/uploads/2.png" 
+                    src="/portfolio/uploads/2.JPG" 
                     alt="Olga Kapshai" 
                     className="w-full h-full object-cover"
                   />
