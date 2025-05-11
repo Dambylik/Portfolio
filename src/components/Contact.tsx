@@ -1,7 +1,6 @@
-
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
-import { Mail, MapPin, Linkedin, Github, Twitter } from "lucide-react";
+import { Mail, MapPin, Linkedin, Github } from "lucide-react";
 
 const Contact = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -61,8 +60,8 @@ const Contact = () => {
                   <Mail size={24} className="text-accent" />
                 </div>
                 <h4 className="font-medium text-lg mb-2">Email</h4>
-                <a href="mailto:olga.kapshai@example.com" className="text-accent hover:underline">
-                  olga.kapshai@example.com
+                <a href="mailto:olgakapshai@protonmail.com" className="text-accent hover:underline">
+                olgakapshai@protonmail.com
                 </a>
               </div>
               
@@ -72,7 +71,7 @@ const Contact = () => {
                   <MapPin size={24} className="text-accent" />
                 </div>
                 <h4 className="font-medium text-lg mb-2">Location</h4>
-                <p>San Francisco, California, USA</p>
+                <p>Paris, France</p>
               </div>
               
               {/* Social Links */}
@@ -82,14 +81,11 @@ const Contact = () => {
                 </div>
                 <h4 className="font-medium text-lg mb-2">Social</h4>
                 <div className="flex space-x-4 mt-2">
-                  <a href="#" className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center hover:bg-accent/20 transition-colors">
+                  <a href="https://www.linkedin.com/in/your-linkedin-profile" className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center hover:bg-accent/20 transition-colors">
                     <Linkedin size={18} className="text-accent" />
                   </a>
-                  <a href="#" className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center hover:bg-accent/20 transition-colors">
+                  <a href="https://github.com/dambylik" className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center hover:bg-accent/20 transition-colors">
                     <Github size={18} className="text-accent" />
-                  </a>
-                  <a href="#" className="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center hover:bg-accent/20 transition-colors">
-                    <Twitter size={18} className="text-accent" />
                   </a>
                 </div>
               </div>
